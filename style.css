@@ -1,0 +1,24 @@
+html{
+    background: rgb(37, 36, 36);
+}
+  
+.items{
+    text-align: center;
+    margin-top: 400px;
+}
+.text{
+    font-family: Tahoma;
+    color: rgb(236, 225, 238);
+}
+.text2{
+    font-family: Tahoma;
+    color: rgb(236, 225, 238);
+}
+#pretty-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
