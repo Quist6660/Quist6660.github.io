@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+  }
+  
+  .container {
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #eee;
+  }
+  
+  #city-input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  #search-btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #search-btn:hover {
+    background-color: #0D47A1;
+  }
+  
+  #city-name {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  #temp {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #feels-like {
+    font-size: 18px;
+  }
+  
+  #wind-speed {
+    font-size: 18px;
+  }
+  
+  #description {
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  .gradient-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+  }
+
+.sc-button{
+    margin-top: 10px;
+}
+  
+  
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @-moz-keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  </style>
+</head>
+<body>
+<div class="gradient-bg"></div>
+  <div class="container form-group">
+    <h1 class="offset-3 offset-md-4 weather-text">Weather App</h1>
+    <input class="offset-4 col-4 sc-input form-control" type="text" id="city-input" placeholder="Enter city name">
+    <button class="offset-4 col-4 sc-button btn btn-primary" id="search-btn">Search</button>
+    <hr>
+    <p>City: <span id="city-name"></span></p>
+    <p>Temperature: <span id="temp"></span> (<span id="feels-like"></span>)</p>
+    <p>Wind speed: <span id="wind-speed"></span></p>
+    <p>Description: <span id="description"></span></p>
+  </div>
+  <script src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
